@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Home</title>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+      <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  </head>
+  <body class="lift:content_id=main">
+    <div id="main" class="lift:surround?with=default;at=content">
+      <h2>Welcome to your project!</h2>
+      <p>
+        <div>
+            <form class="lift:addItem?form=post">
+                <table class="item">
+
+                    <tr>
+                        <td>Return date:</td>
+                        <td><input name="returnDate" id="datepicker" /></td>
+                    </tr>
+
+
+                </table>
+
+                <input id="submit" type="submit" value="Add"/>
+            </form>
+        </div>
+      </p>
+    </div>
+    <script>
+        $(function() {
+        $( "#datepicker" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        "option", "showAnim",
+        $( this ).val()
+        });
+        });
+    </script>
+  </body>
+</html>
+
