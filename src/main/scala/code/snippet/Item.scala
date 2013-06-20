@@ -17,7 +17,7 @@ class addItem {
     def process() {
       S.notice("Return Date: " + returnDate)
     }
-    "name=nextMOTDate" #> SHtml.text(returnDate, returnDate = _) &
+    "name=returnDate" #> SHtml.text(returnDate, returnDate = _) &
       "type=submit" #> SHtml.submit("Add", process)
   }
 }
