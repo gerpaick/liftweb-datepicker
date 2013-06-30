@@ -3,13 +3,17 @@
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
     <title>Home</title>
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-      <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-      <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   </head>
   <body class="lift:content_id=main">
     <div id="main" class="lift:surround?with=default;at=content">
       <h2>Welcome to your project!</h2>
+        <link data-lift="head" type="text/css" rel="stylesheet"
+              href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+        </link>
+
+        <script data-lift="tail"
+                src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+        </script>
       <p>
         <div>
             <form class="lift:addItem?form=post">
@@ -28,18 +32,6 @@
         </div>
       </p>
     </div>
-    <script>
-        $(function() {
-        $( "#datepicker" ).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        "option", "showAnim",
-        $( this ).val()
-        });
-        });
-    </script>
   </body>
 </html>
 
